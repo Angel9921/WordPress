@@ -14,6 +14,10 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
 
+      # Instalar el módulo 'coverage'
+      - name: Install coverage
+        run: pip install coverage
+
       # Paso para ejecutar pruebas y generar el reporte de cobertura
       - name: pruebas+coverage
         id: pruebas
